@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Index } from '../components/pages/Index'
 import { Articles } from '../components/pages/Articles'
-import { Article } from '@mui/icons-material'
 import { Header } from '../components/layout/Header'
 import { CreateArticle } from '../components/pages/CreateArticle'
 import { Footer } from '../components/layout/Footer'
@@ -36,8 +35,8 @@ export const MainRouter = () => {
                 <Route path='/create-art' element={<CreateArticle />}/>
                 <Route path='/edit-art' element={<EditArticle/>}/>
                 <Route path='/search/:search_field' element={<SearchResult/>}/>
-                <Route path='/signup' element={<Article/>}/>
-                <Route path='/login' element={<Article/>}/>
+                <Route path='/signup' element={<Index/>}/>
+                <Route path='/login' element={<Index/>}/>
                 <Route path='/error' element={<Error/>}/>
                 <Route path='*' element={
                     <div className='error-direct-container'>
@@ -46,14 +45,7 @@ export const MainRouter = () => {
                 }/>
             </Routes>
             </div>
-          
-          
         </section>
-          
-        
-        
-    
-        
     </BrowserRouter>
   )
 }
