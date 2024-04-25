@@ -29,16 +29,16 @@ export const MainRouter = () => {
             <div className='routes-container'>
             {/*Content and routes*/}
             <Routes>
-                <Route path='/' element={<Index/>}/>
-                <Route path='/home' element={<Index/>}/>
-                <Route path='/my-articles' element={<Articles/>}/>
-                <Route path='/article' element={<Article/>}/>
-                <Route path='/create-art' element={<CreateArticle />}/>
-                <Route path='/edit-art' element={<EditArticle/>}/>
-                <Route path='/search/:search_field' element={<SearchResult/>}/>
-                <Route path='/signup' element={<Index/>}/>
-                <Route path='/login' element={<Index/>}/>
-                <Route path='/error' element={<Error/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/' element={<Index/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/home' element={<Index/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/my-articles' element={<Articles/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/article' element={<Article/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/create-art' element={<CreateArticle />}/>
+                <Route path='https://mugblog-frontend.onrender.com/edit-art' element={<EditArticle/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/search/:search_field' element={<SearchResult/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/signup' element={<Index/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/login' element={<Index/>}/>
+                <Route path='https://mugblog-frontend.onrender.com/error' element={<Error/>}/>
                 <Route path='*' element={
                     <div className='error-direct-container'>
                         <h1>Error 404</h1>
