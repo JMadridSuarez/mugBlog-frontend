@@ -9,7 +9,7 @@ export const EditArticle = () => {
   const [image, setImage] = useState();
   const date = new Date().toISOString(Date.now());
   const url = import.meta.env.VITE_BACKEND_URL;
-  const intUrl = import.meta.env.VITE_FRONTEND_URL;
+  const intUrl = "https://mugblock-backend.onrender.com";
   
   const updateArticle = async(e)=>{
     e.preventDefault();
@@ -30,7 +30,7 @@ export const EditArticle = () => {
         updateArticleResponse.json()
         if(updateArticleResponse.status === 200){
           uploadImage();
-          window.location.href=`${intUrl}/my-articles`;
+          window.location.href=`/my-articles`;
           console.log(updateArticleResponse.status)
          }
         

@@ -8,7 +8,7 @@ export const CreateArticle = () => {
   const [content, setContent] = useState();
   const [image, setImage] = useState();
   const date = new Date().toISOString(Date.now());
-  const url = import.meta.env.VITE_BACKEND_URL;
+  const url = "https://mugblock-backend.onrender.com";
   
   const postArticle = async(e) =>{
     e.preventDefault();

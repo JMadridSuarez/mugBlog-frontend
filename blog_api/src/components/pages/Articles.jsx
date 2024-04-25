@@ -7,7 +7,7 @@ import { useCookies } from 'react-cookie';
 export const Articles = () => {
   const [cookies] = useCookies(null);
   const [articles, setArticles] = useState();
-  const url = import.meta.env.VITE_BACKEND_URL;
+  const url = "https://mugblock-backend.onrender.com";
   const email = cookies.Email;
   const authToken = cookies.AuthToken;
 

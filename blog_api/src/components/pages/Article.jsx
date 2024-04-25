@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Article = ({article,handleArticles}) => {
 
-  const url = import.meta.env.VITE_BACKEND_URL;
+  const url = 'https://mugblock-backend.onrender.com';
 
   const deleteArticle =async(e)=>{
     e.preventDefault();

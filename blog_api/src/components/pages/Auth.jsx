@@ -11,7 +11,7 @@ export const Auth = () => {
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
     const [cookies, setCookie] = useCookies(null);
-    const url = import.meta.env.VITE_BACKEND_URL;
+    const url = "https://mugblock-backend.onrender.com";
     
 
     const viewLogin =(state)=>{

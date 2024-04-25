@@ -8,7 +8,7 @@ export const Index = () => {
   const [cookies,setCookie, removeCookie]=useCookies();
   const [articles, setArticles] = useState([]);
   const email = cookies.Email;
-  const url = import.meta.env.VITE_BACKEND_URL;
+  const url = "https://mugblock-backend.onrender.com";
   
   
   const handleArticles = async()=>{

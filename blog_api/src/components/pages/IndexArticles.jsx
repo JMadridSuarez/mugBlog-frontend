@@ -2,7 +2,7 @@ import { Global } from '../../helpers/Global';
 import React from 'react'
 
 export const IndexArticles = ({article}) => {
-  const url = import.meta.env.VITE_BACKEND_URL;
+  const url = "https://mugblock-backend.onrender.com";
 
   return (
     <div className='article-container'>

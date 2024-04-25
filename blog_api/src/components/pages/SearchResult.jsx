@@ -7,7 +7,7 @@ export const SearchResult = () => {
   const [articles, setArticles] = useState([]);
   const params = useParams();
   const navigate = useNavigate();
-  const url = import.meta.env.VITE_BACKEND_URL;
+  const url = "https://mugblock-backend.onrender.com";
   const handleArticles = async()=>{
     try {
       const selectArticles =  await fetch(`${url}/api/v1/search/${params.search_field}`)
