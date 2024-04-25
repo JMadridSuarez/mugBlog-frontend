@@ -28,7 +28,7 @@ export const MainRouter = () => {
 
             <div className='routes-container'>
             {/*Content and routes*/}
-            <Router basename="">
+            
               <Routes>
                   <Route path='/' element={<Index/>}/>
                   <Route path='/home' element={<Index/>}/>
@@ -46,7 +46,7 @@ export const MainRouter = () => {
                       </div>
                   }/>
               </Routes>
-            </Router>
+            
             
             </div>
         </section>
