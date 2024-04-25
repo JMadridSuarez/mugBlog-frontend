@@ -28,8 +28,8 @@ export const MainRouter = () => {
 
             <div className='routes-container'>
             {/*Content and routes*/}
-            <Router basename="">
-              <Routes>
+            <Router basename="https://mugblog-frontend.onrender.com">
+              
                   <Route path='/' element={<Index/>}/>
                   <Route path='/home' element={<Index/>}/>
                   <Route path='/my-articles' element={<Articles/>}/>
@@ -45,7 +45,7 @@ export const MainRouter = () => {
                           <h1>Error 404</h1>
                       </div>
                   }/>
-              </Routes>
+              
             </Router>
             
             </div>
