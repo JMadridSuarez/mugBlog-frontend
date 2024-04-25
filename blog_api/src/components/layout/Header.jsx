@@ -7,7 +7,7 @@ export const Header = () => {
     <div className='header-container'>
         <div className='header-container-box'>
           <div className='logo-container'>
-            <a href="http://localhost:5173/home">
+            <a href="https://mugblog-frontend.onrender.com/home">
           <svg 
           className='mug'
           width="79px"

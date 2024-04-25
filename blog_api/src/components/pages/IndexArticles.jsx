@@ -1,24 +1,8 @@
 import { Global } from '../../helpers/Global';
 import React from 'react'
 
-export const IndexArticles = ({article,handleArticles}) => {
-  const url = import.meta.env.VITE_BACKEND_URL || "http://localhost:7000";
-  const deleteArticle =async(e)=>{
-    e.preventDefault();
-    try {
-      const deleteArticle = await fetch(`${url}/api/v1/articles/${article.article_id}`,{
-        method: 'DELETE'
-      });
-      if(deleteArticle.status === 200){
-        handleArticles();
-      }
-      
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  
+export const IndexArticles = ({article}) => {
+  const url = import.meta.env.VITE_BACKEND_URL;
 
   return (
     <div className='article-container'>

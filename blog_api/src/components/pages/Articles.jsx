@@ -7,7 +7,7 @@ import { useCookies } from 'react-cookie';
 export const Articles = () => {
   const [cookies] = useCookies(null);
   const [articles, setArticles] = useState();
-  const url = import.meta.env.VITE_BACKEND_URL || "http://localhost:7000";
+  const url = import.meta.env.VITE_BACKEND_URL;
   const email = cookies.Email;
   const authToken = cookies.AuthToken;
 

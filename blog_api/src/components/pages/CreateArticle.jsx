@@ -8,8 +8,8 @@ export const CreateArticle = () => {
   const [content, setContent] = useState();
   const [image, setImage] = useState();
   const date = new Date().toISOString(Date.now());
-  const url = import.meta.env.VITE_BACKEND_URL || "http://localhost:7000";
-  const intUrl = import.meta.env.VITE_FRONTEND_URL || "http://localhost:5173"
+  const url = import.meta.env.VITE_BACKEND_URL;
+  const intUrl = import.meta.env.VITE_FRONTEND_URL;
   const postArticle = async(e) =>{
     e.preventDefault();
     try {

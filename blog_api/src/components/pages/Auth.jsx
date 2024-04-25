@@ -10,9 +10,9 @@ export const Auth = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
-    const [cookies, setCookie,] = useCookies(null);
-    const url = import.meta.env.VITE_BACKEND_URL || "http://localhost:7000";
-    console.log(cookies)
+    const [cookies, setCookie] = useCookies(null);
+    const url = import.meta.env.VITE_BACKEND_URL;
+    
 
     const viewLogin =(state)=>{
         setError(null);

@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Article = ({article,handleArticles}) => {
 
-  const url = import.meta.env.VITE_BACKEND_URL || "http://localhost:7000";
+  const url = import.meta.env.VITE_BACKEND_URL;
 
   const deleteArticle =async(e)=>{
     e.preventDefault();
@@ -36,7 +36,7 @@ export const Article = ({article,handleArticles}) => {
         
         <p className='date'>{article.date}</p>
         <div className='article-options'>
-          <a href='http://localhost:5173/edit-art' article={article} className='edit'>Edit</a>
+          <a href='https://mugblog-frontend.onrender.com/edit-art' article={article} className='edit'>Edit</a>
           <button onClick={deleteArticle} className='delete'>Delete</button>
         </div>
       </div>

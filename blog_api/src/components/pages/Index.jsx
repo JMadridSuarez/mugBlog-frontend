@@ -8,7 +8,7 @@ export const Index = () => {
   const [cookies,setCookie, removeCookie]=useCookies();
   const [articles, setArticles] = useState([]);
   const email = cookies.Email;
-  const url = import.meta.env.VITE_BACKEND_URL || "http://localhost:7000";
+  const url = import.meta.env.VITE_BACKEND_URL;
   
   
   const handleArticles = async()=>{

@@ -6,7 +6,7 @@ export const SideBar = () => {
   return (
     <div className='sideBar-container'>
       <div className="sideBar-container-box">
-          <a  href='http://localhost:5173/create-art' className='create-button'>Create article</a>
+          <a  href='https://mugblog-frontend.onrender.com/create-art' className='create-button'>Create article</a>
       </div>
     </div>
   )
