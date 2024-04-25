@@ -9,7 +9,7 @@ export const CreateArticle = () => {
   const [image, setImage] = useState();
   const date = new Date().toISOString(Date.now());
   const url = import.meta.env.VITE_BACKEND_URL;
-  const intUrl = import.meta.env.VITE_FRONTEND_URL;
+  
   const postArticle = async(e) =>{
     e.preventDefault();
     try {

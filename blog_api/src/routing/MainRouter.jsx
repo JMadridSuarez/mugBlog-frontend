@@ -14,7 +14,7 @@ import { Error } from '../components/pages/Error'
 
 
 export const MainRouter = () => {
-  
+  const url = import.meta.env.VITE_BACKEND_URL;
   return (
     <BrowserRouter>
         

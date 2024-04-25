@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav } from './Nav'
 
 export const Header = () => {
-  const intUrl = import.meta.env.VITE_FRONTEND_URL || "http://localhost:5173"
+  
   return (
     <div className='header-container'>
         <div className='header-container-box'>
