@@ -47,7 +47,7 @@ export const CreateArticle = () => {
       const formData = new FormData();
       formData.append('file0',image);
       try {
-        const response = await fetch(`${intUrl}/api/v1/upload/${id}`,{
+        const response = await fetch(`${url}/api/v1/upload/${id}`,{
         method: 'POST',
         body: formData
       })
