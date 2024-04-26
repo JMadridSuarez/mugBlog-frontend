@@ -8,7 +8,7 @@ export const Header = () => {
     <div className='header-container'>
         <div className='header-container-box'>
           <div className='logo-container'>
-            <NavLink href="/home">
+            <Link href="/home">
           <svg 
           className='mug'
           width="79px"
@@ -28,7 +28,7 @@ export const Header = () => {
                 </path>
           </g></svg>
           <p className='logo-text'>MUGBLOG</p>
-            </NavLink> 
+            </Link> 
           </div>
          
         
