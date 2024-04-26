@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Routes, HashRouter,} from 'react-router-dom'
+import {Route, Routes, HashRouter, Link,} from 'react-router-dom'
 import { Index } from '../components/pages/Index'
 import { Articles } from '../components/pages/Articles'
 import {Article} from '../components/pages/Article'
@@ -25,6 +25,7 @@ export const MainRouter = () => {
         <section className='center-container'>
             <div className='sideBar-container'>
               <SideBar/>
+              <Link to="/create-art"/>
             </div>
 
             <div className='routes-container'>
