@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Router} from 'react-router-dom'
+import {Route, Routes, HashRouter,} from 'react-router-dom'
 import { Index } from '../components/pages/Index'
 import { Articles } from '../components/pages/Articles'
 import {Article} from '../components/pages/Article'
@@ -13,10 +13,11 @@ import { Error } from '../components/pages/Error'
 
 
 
+
 export const MainRouter = () => {
   const url = import.meta.env.VITE_BACKEND_URL;
   return (
-    <BrowserRouter>
+    <HashRouter>
         
         {/*LAYOUT*/}
         
@@ -50,6 +51,6 @@ export const MainRouter = () => {
             
             </div>
         </section>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
