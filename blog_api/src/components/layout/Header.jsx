@@ -8,7 +8,7 @@ export const Header = () => {
     <div className='header-container'>
         <div className='header-container-box'>
           <div className='logo-container'>
-            <Link href="/home">
+            <Link to="/home">
           <svg 
           className='mug'
           width="79px"
