@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav } from './Nav'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
   
@@ -7,7 +8,7 @@ export const Header = () => {
     <div className='header-container'>
         <div className='header-container-box'>
           <div className='logo-container'>
-            <a href="/home">
+            <NavLink href="/home">
           <svg 
           className='mug'
           width="79px"
@@ -27,7 +28,7 @@ export const Header = () => {
                 </path>
           </g></svg>
           <p className='logo-text'>MUGBLOG</p>
-            </a> 
+            </NavLink> 
           </div>
          
         
