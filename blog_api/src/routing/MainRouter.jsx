@@ -25,7 +25,7 @@ export const MainRouter = () => {
         <section className='center-container'>
             <div className='sideBar-container'>
               <SideBar/>
-              <Link to="/create-art"/>
+              <Link to="/create-art">Create art </Link>
             </div>
 
             <div className='routes-container'>
