@@ -32,7 +32,7 @@ export const Auth = () => {
             body: JSON.stringify({name,lastname,email,password})    
         })
         if(response.status === 200){
-            const {data} =await response.json()
+            const data = await response.json()
             if(data.detail){
                 setError(data.detail);
             }else{
