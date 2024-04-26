@@ -71,7 +71,7 @@ export const CreateArticle = () => {
   return (
     <div className='create-container'>
       <div className='create-container-box'>
-          <form className='article-form' action="">
+          <form className='article-form' method='POST'>
             <input name='title' className='article-input' type="text" placeholder='Enter your title' 
             onChange={(e)=>setTitle(e.target.value)}/>
             <textarea name='content' onChange={(e)=>setContent(e.target.value)} className='article-input article-textarea' rows="10" cols="50" minLength="100" placeholder='Enter article content'/>

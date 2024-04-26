@@ -49,7 +49,7 @@ export const Auth = () => {
   return (
     <div className='auth-container'>
         <div className="auth-container-box">
-            <form className='auth-form' action="">
+            <form className='auth-form' method='POST'>
                 <h2>{isLogin? 'Please Login': 'Please Sign up'}</h2>
                 {!isLogin && <input required className='auth-name' type="text" onChange={(e)=>setName(e.target.value)} placeholder=' Name'/>}
                 {!isLogin && <input required className='auth-lastname' type="text" onChange={(e)=>setLastName(e.target.value)} placeholder=' Lastname'/>}
