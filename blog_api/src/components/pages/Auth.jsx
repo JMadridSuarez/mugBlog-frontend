@@ -30,7 +30,7 @@ export const Auth = () => {
             method: 'POST',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({name,lastname,email,password})    
-        })
+        },3000)
         if(response.status === 200){
             const {data} =await response.json()
             if(data.detail){
