@@ -25,7 +25,7 @@ export const CreateArticle = () => {
          
          if(postArticleResponse.status === 200){
          uploadImage();
-          window.location.href=`/my-articles`;
+          window.location.href=`/`;
          }
          
       }

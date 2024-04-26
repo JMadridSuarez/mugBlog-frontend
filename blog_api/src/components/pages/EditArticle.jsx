@@ -30,7 +30,7 @@ export const EditArticle = () => {
         updateArticleResponse.json()
         if(updateArticleResponse.status === 200){
           uploadImage();
-          window.location.href=`/my-articles`;
+          window.location.href=`/`;
           console.log(updateArticleResponse.status)
          }
         
