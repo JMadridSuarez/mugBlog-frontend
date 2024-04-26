@@ -30,7 +30,7 @@ export const Auth = () => {
             method: 'POST',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({name,lastname,email,password})    
-        },3000)
+        })
         if(response.status === 200){
             const {data} =await response.json()
             if(data.detail){
@@ -49,14 +49,14 @@ export const Auth = () => {
   return (
     <div className='auth-container'>
         <div className="auth-container-box">
-            <form className='auth-form' method='POST'>
+            <form className='auth-form' method='POST' onSubmit={(e)=>handleSubmit(e,isLogin? 'login' : 'signup')}>
                 <h2>{isLogin? 'Please Login': 'Please Sign up'}</h2>
                 {!isLogin && <input required className='auth-name' type="text" onChange={(e)=>setName(e.target.value)} placeholder=' Name'/>}
                 {!isLogin && <input required className='auth-lastname' type="text" onChange={(e)=>setLastName(e.target.value)} placeholder=' Lastname'/>}
                 <input required className='auth-email' type="email" onChange={(e)=>setEmail(e.target.value)} placeholder=' Email'/>
                 <input required className='auth-password' type="password" onChange={(e)=>setPassword(e.target.value)} placeholder=' Password'/>
                 { !isLogin && <input required className='auth-confirm' type="password" onChange={(e)=>setConfirmPassword(e.target.value)} placeholder=' Confirm Password'/>}
-                <input className='auth-submit' type='Submit' onClick={(e)=> handleSubmit(e, isLogin ? 'login' : 'signup')}/>
+                <input className='auth-submit' type='Submit'/>
                 {error && <p>{error}</p>}
             </form>
             <div className='auth-options'>
