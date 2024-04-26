@@ -8,6 +8,7 @@ export const SideBar = () => {
     <div className='sideBar-container'>
       <div className="sideBar-container-box">
           <Link  href='/create-art' className='create-button'>Create article</Link>
+          <Link to="/create-art">Create art </Link>
       </div>
     </div>
   )
