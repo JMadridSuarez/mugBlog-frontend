@@ -494,7 +494,19 @@ font-weight: 700;
 }
 
 /*media queries*/
+@media (max-width : 1600px){
+.header-container{
+  width: 1500px;
+}
+}
 
+.routes-container{
+  width: 1500px;
+}
+.article-container{
+
+  width: 1180px;
+}
 
 @media (max-width : 1200px){
 /*header*/ 
@@ -566,7 +578,6 @@ font-weight: 700;
   .header-container{
     width: 800px;
     justify-content: center;
-    
    }
    .header-container-box{
     margin: 0;
@@ -574,7 +585,14 @@ font-weight: 700;
    .header-container-box h1{
     margin-left: 10px;
    }
+   .logo-container{
+    margin: 0;
+   }
   
+   .center-container{
+    width: 650px;
+   }
+
   .content-container{
     flex-direction: column;
     width: 650px;
@@ -596,7 +614,8 @@ font-weight: 700;
   }
   .article-container{
     height: auto;
-    width: 650px;
+    width: 620px;
+
   }
   .image-container{
     justify-content: center;
@@ -626,19 +645,33 @@ font-weight: 700;
   flex-direction: column;
   margin: 0;
  }
+ .logo-container{
+  height: auto;
+ }
  .nav-container{
   width: 570px;
   justify-content: center;
   align-items: center;
-  
  }
+ .nav-container nav{
+  height: 120px;
+ }
+
  .nav-container ul{
-  margin-top: 30px;
-  margin-left: 110px;
+  margin-top: 10px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: flex-end;
+ }
+ .nav-container ul button{
+  background-color: rgb(210, 209, 209);
  }
  .search-container{
-  margin-left: 170px;
+  margin-left: 120px;
   width: 400px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   
  }
  .search-container form{
@@ -653,18 +686,35 @@ font-weight: 700;
   width: 576px;
  }
  .sideBar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
   height: auto;
   border: none;
+ }
+ .sideBar-container-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .create-button{
+  margin-top: 15px;
+  height: 50px;
+  width: 110px;
  }
 /*-------*/
 
   .routes-container{
+    display: inline-block;
     width: 576px;
+    margin-top: 25px;
     height: auto;
   }
   .article-container{
     width: 576px;
     margin: 0;
+    margin-top: 40px;
     margin-bottom: 10px;
   }
   .article-container-box{
@@ -692,7 +742,7 @@ font-weight: 700;
    }
    .nav-container{
     width: 360px;  
-   
+    margin-right: 20px;
     height: auto;
    }
 
@@ -701,12 +751,25 @@ font-weight: 700;
     font-size: 5px;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    align-items: center;
+    
    }
    .nav-container ul li{
     margin-right: 8px;
    }
    .nav-container ul li a{
     font-size: 19px;
+   }
+   .nav-container ul button{
+    text-align: center;
+    align-content: center;
+    border: none;
+    width: 70px;
+    height: 39px;
+    font-size: 11px;
    }
    
    .search-container{
@@ -721,7 +784,9 @@ font-weight: 700;
     width: 100px;
    }
 
-
+   .sideBar-container{
+    width: 50px;
+   }
 
    .center-container{
     flex-direction: column;
@@ -751,8 +816,34 @@ font-weight: 700;
   .create-container-box{
     height: 500px;
     width: 360px;
+    
   }
-
+  .sideBar-container{
+   
+    height: 70px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .sideBar-container-box{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .create-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    font-size: 10px;
+    height: 40px;
+  }
   .image-container{
     max-height: 900px;
   }
