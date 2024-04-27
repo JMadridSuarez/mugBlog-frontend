@@ -495,6 +495,21 @@ font-weight: 700;
 
 /*media queries*/
 @media (max-width : 1600px){
+  .auth-name{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-lastname{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-email{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-password{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-confirm{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
 .header-container{
   width: 1500px;
 }
@@ -509,6 +524,21 @@ font-weight: 700;
 }
 
 @media (max-width : 1200px){
+  .auth-name{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-lastname{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-email{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-password{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-confirm{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
 /*header*/ 
  .header-container{
   width: 1100px;
@@ -575,6 +605,22 @@ font-weight: 700;
 }
 
 @media (max-width: 800px){
+  .auth-name{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-lastname{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-email{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-password{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-confirm{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  
   .header-container{
     width: 800px;
     justify-content: center;
@@ -627,12 +673,36 @@ font-weight: 700;
 }
 
 @media (max-width: 576px){
+  
+  .auth-form{
+    width: 560px;
+  }
+  .auth-form input{
+    width: 500px;
+  }
+  .auth-name{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-lastname{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-email{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-password{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-confirm{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+
   .article-container{
     height: auto;
   }
   .article-container-box{
     height: auto;
   }
+
   /*header*/ 
  .header-container{
   width: 576px;
@@ -737,6 +807,31 @@ font-weight: 700;
 }
 
 @media(max-width: 360px){
+  .auth-container{
+    width: 350px;
+  }
+  .auth-form{
+    
+    width: 350px;
+  }
+  .auth-form input{
+    width: 300px;
+  }
+  .auth-name{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-lastname{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-email{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-password{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
+  .auth-confirm{
+    background-color:  rgba(17, 17, 17, 0.08);
+  }
   .header-container{
     width: 360px;
    }

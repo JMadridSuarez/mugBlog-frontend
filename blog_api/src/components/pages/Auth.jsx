@@ -16,7 +16,7 @@ export const Auth = () => {
 
     const viewLogin =(state)=>{
         setError(null);
-        setIsLogin(false);
+        setIsLogin(state);
     }
     const handleSubmit = async(e,endpoint) =>{
         e.preventDefault();
